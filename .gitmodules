@@ -1,27 +1,27 @@
 [submodule "PythonEO"]
 	path = PythonEO
-	url = git@github.com:iblancasa/PythonEO.git
+	url = https://github.com/iblancasa/PythonEO.git
 [submodule "BashEO"]
 	path = BashEO
-	url = git@github.com:iblancasa/BashEO.git
+	url = https://github.com/iblancasa/BashEO.git
 [submodule "JuliEO"]
 	path = JuliEO
-	url = git@github.com:iblancasa/JuliEO.git
+	url = https://github.com/iblancasa/JuliEO.git
 [submodule "goEO"]
 	path = goEO
-	url = git@github.com:JJ/goEO.git
+	url = https://github.com/JJ/goEO.git
 [submodule "scalEO"]
 	path = scalEO
-	url = git@github.com:JJ/scalEO.git
+	url = https://github.com/JJ/scalEO.git
 [submodule "eo_revival"]
 	path = eo_revival
-	url = git@github.com:pacastillo/eo_revival.git
+	url = https://github.com/pacastillo/eo_revival.git
 [submodule "LunEO"]
 	path = LunEO
-	url = git@github.com:JJ/LunEO.git
+	url = https://github.com/JJ/LunEO.git
 [submodule "nodeo"]
 	path = nodeo
-	url = git@github.com:JJ/nodeo.git
+	url = https://github.com/JJ/nodeo.git
 [submodule "RubyEO"]
 	path = RubyEO
-	url = git@github.com:analca3/RubyEO.git
+	url = https://github.com/analca3/RubyEO.git

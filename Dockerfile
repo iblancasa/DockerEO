@@ -19,15 +19,22 @@ RUN \
 # Adding repos
 RUN add-apt-repository ppa:staticfloat/juliareleases -y
 RUN add-apt-repository ppa:staticfloat/julia-deps -y
+RUN echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
 
-
-# Installing more things
+# Installing languages
 RUN apt-get update
-RUN apt-get install julia lua5.2 git python ruby golang npm nodejs -y
+RUN apt-get install julia lua5.2 git python ruby golang npm nodejs scala sbt -y
 
 
 # Cloning files
 RUN git clone --recursive https://github.com/iblancasa/DockerEO.git
 
+# Compiling C/C++ version
+RUN cd DockerEO/eo_revival/bfcpp && make
+
 # Installing dependences of Nodeo
 RUN cd DockerEO/nodeo && npm install
+
+# Compiling Scala files
+RUN cd DockerEO/scalEO && sbt compile
